@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý Sinh viên</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+</head>
+<body class="bg-gradient-to-r from-blue-200 to-blue-50 min-h-screen flex">
+
+  <!-- Sidebar -->
+  <aside class="w-64 bg-white shadow-lg rounded-r-3xl p-5">
+    <h1 class="text-2xl font-bold text-blue-600 mb-6">QLSV</h1>
+    <nav class="space-y-3">
+      <a href="#" class="block p-3 rounded-xl bg-blue-100 hover:bg-blue-200">🏠 Dashboard</a>
+      <a href="#" class="block p-3 rounded-xl hover:bg-blue-100">👨‍🎓 Sinh viên</a>
+      <a href="#" class="block p-3 rounded-xl hover:bg-blue-100">📘 Môn học</a>
+      <a href="#" class="block p-3 rounded-xl hover:bg-blue-100">📝 Điểm số</a>
+      <a href="#" class="block p-3 rounded-xl hover:bg-blue-100">📊 Thống kê</a>
+      <a href="#" class="block p-3 rounded-xl hover:bg-blue-100">⚙️ Tài khoản</a>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main class="flex-1 p-10">
+    <h2 class="text-3xl font-semibold text-gray-700 mb-5">Danh sách Sinh viên</h2>
+    <div class="bg-white shadow-xl rounded-2xl p-5">
+      <table class="w-full text-left border-collapse">
+        <thead>
+          <tr class="bg-blue-100">
+            <th class="p-3">Mã SV</th>
+            <th class="p-3">Họ tên</th>
+            <th class="p-3">Lớp</th>
+            <th class="p-3">Email</th>
+            <th class="p-3">GPA</th>
+            <th class="p-3">Hành động</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="hover:bg-blue-50">
+            <td class="p-3">SV001</td>
+            <td class="p-3">Nguyễn Văn A</td>
+            <td class="p-3">CNTT1</td>
+            <td class="p-3">a@ptit.edu.vn</td>
+            <td class="p-3">3.2</td>
+            <td class="p-3 space-x-2">
+              <button class="bg-green-500 text-white px-3 py-1 rounded-xl">Sửa</button>
+              <button class="bg-red-500 text-white px-3 py-1 rounded-xl">Xóa</button>
+            </td>
+          </tr>
+          <!-- Thêm dòng khác -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
